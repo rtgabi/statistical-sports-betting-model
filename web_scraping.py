@@ -63,7 +63,7 @@ def get_team_goals(team_name: str, opponent: str, start_year: int) -> ({}, {}):
 
         # Go to the "Results" tab
         results_tab=WebDriverWait(driver,10).until(
-            EC.element_to_be_clickable((By.ID, "li2"))
+            EC.element_to_be_clickable((By.XPATH, "//*[text()='Results']"))
         )
         results_tab.click()
 
